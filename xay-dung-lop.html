@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>MyDate</h4>
+<div id="show"></div>
+<script>
+    // class Date {
+    //     constructor(day, month, year) {
+    //         this.day = day;
+    //         this.month = month;
+    //         this.year = year;
+    //     }
+    // }
+    //
+    // let myDate = new Date('23', '10', '2002');
+    // document.getElementById('show').innerHTML = myDate.day + '/' + myDate.month + '/' + myDate.year;
+        let maidet = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.changeDay = function (day) {
+            this.day = day;
+        };
+        this.changeMonth = function (month) {
+            this.month = month;
+        };
+        this.changeYear = function (year) {
+            this.year = year;
+        };
+    }
+
+        // this.getDay = function () {
+        //     return this.day;
+        // }
+        // this.getMonth = function () {
+        //     return this.month;
+        // }
+        // this.getYear = function () {
+        //     return this.year;
+        // }
+        //
+        // this.setDay = function (day) {
+        //     this.day = day;
+        // }
+        // this.setMonth = function (month) {
+        //     this.month = month;
+        // }
+        // this.setYear = function (year) {
+        //     this.year = year;
+        // }
+
+    let date1 = new maidet(17, 9, 2002);
+        document.write(date1.day + date1.month + date1.year)
+    // date1.changeDay(71)
+    // let date2 = new Mydate(23, 10, 2002);
+    // date2.changeYear(2002)
+
+    // alert(day + "/" + month + "/" + year)
+
+</script>
+</body>
+</html>
